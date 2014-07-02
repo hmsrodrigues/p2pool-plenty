@@ -8,9 +8,9 @@ from p2pool.util import pack
 
 
 P2P_PREFIX = 'fbc0b6db'.decode('hex')
-P2P_PORT = 9333
+P2P_PORT = 4336
 ADDRESS_VERSION = 48
-RPC_PORT = 9332
+RPC_PORT = 3336
 RPC_CHECK = defer.inlineCallbacks(lambda bitcoind: defer.returnValue(
             'litecoinaddress' in (yield bitcoind.rpc_help()) and
             not (yield bitcoind.rpc_getinfo())['testnet']
