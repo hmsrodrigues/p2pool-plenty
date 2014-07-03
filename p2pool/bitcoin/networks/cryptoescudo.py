@@ -21,7 +21,7 @@ BLOCK_PERIOD=120 # s
 SYMBOL='CESC'
 CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'cryptoescudo') if platform.system() == 'Windows'
                 else os.path.expanduser('~/Library/Application Support/cryptoescudo/') if platform.system() == 'Darwin'
-                else os.path.expanduser('~/.cryptoescudo'), 'cryptoescudo.conf')
+                else os.path.expanduser('/home/administrator/.cryptoescudo'), 'cryptoescudo.conf')
 BLOCK_EXPLORER_URL_PREFIX='http://cryptexplorer.com/block/'
 ADDRESS_EXPLORER_URL_PREFIX='http://cryptexplorer.com/address/'
 TX_EXPLORER_URL_PREFIX='http://cryptexplorer.com/tx/'
